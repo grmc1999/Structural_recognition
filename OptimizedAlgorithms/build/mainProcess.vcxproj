@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{43116646-92F4-3B62-AAEA-9B800A1A1EE3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>mainProcess</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mainProcess.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mainProcess</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mainProcess.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mainProcess</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mainProcess.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mainProcess</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mainProcess.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mainProcess</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\open3d_install\include;C:\open3d_install\include\open3d\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_GLIBCXX_USE_CXX11_ABI=0;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_GLIBCXX_USE_CXX11_ABI=0;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\open3d_install\include;C:\open3d_install\include\open3d\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\open3d_install\include;C:\open3d_install\include\open3d\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\open3d_install\lib\Open3D.lib;C:\open3d_install\lib\Open3D_3rdparty_assimp_assimp-vc142-mt.lib;C:\open3d_install\lib\Open3D_3rdparty_assimp_IrrXML.lib;C:\open3d_install\lib\Open3D_3rdparty_jpeg.lib;C:\open3d_install\lib\Open3D_3rdparty_jsoncpp.lib;C:\open3d_install\lib\Open3D_3rdparty_liblzf.lib;C:\open3d_install\lib\Open3D_3rdparty_png.lib;C:\open3d_install\lib\Open3D_3rdparty_zlib.lib;C:\open3d_install\lib\Open3D_3rdparty_rply.lib;C:\open3d_install\lib\Open3D_3rdparty_tinyfiledialogs.lib;C:\open3d_install\lib\Open3D_3rdparty_qhullcpp.lib;C:\open3d_install\lib\Open3D_3rdparty_qhull_r.lib;opengl32.lib;C:\open3d_install\lib\Open3D_3rdparty_imgui.lib;C:\open3d_install\lib\Open3D_3rdparty_zeromq.lib;ws2_32.lib;rpcrt4.lib;iphlpapi.lib;C:\open3d_install\lib\Open3D_3rdparty_tbb_tbb_static.lib;C:\open3d_install\lib\Open3D_3rdparty_tbb_tbbmalloc_static.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_intel_ilp64.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_core.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_sequential.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_tbb_thread.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_tbb_static.lib;C:\open3d_install\lib\Open3D_3rdparty_ippicv_ippiw.lib;C:\open3d_install\lib\Open3D_3rdparty_ippicv_ippicvmt.lib;C:\open3d_install\lib\Open3D_3rdparty_webrtc_webrtc.lib;C:\open3d_install\lib\Open3D_3rdparty_webrtc_webrtc_extra.lib;secur32.lib;winmm.lib;dmoguids.lib;wmcodecdspuuid.lib;msdmo.lib;strmiids.lib;C:\open3d_install\lib\Open3D_3rdparty_civetweb_civetweb.lib;C:\open3d_install\lib\Open3D_3rdparty_civetweb_civetweb-cpp.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_embree3.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_embree_avx.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_embree_avx2.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_simd.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_lexers.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_sys.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_math.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_tasking.lib;C:\open3d_install\lib\Open3D_3rdparty_glew.lib;C:\open3d_install\lib\Open3D_3rdparty_glfw.lib;gdi32.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filameshio.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filament.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filamat_lite.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filaflat.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filabridge.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_geometry.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_backend.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_bluegl.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_bluevk.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_ibl.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_image.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_meshoptimizer.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_smol-v.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_utils.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/Debug/mainProcess.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/Debug/mainProcess.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\open3d_install\include;C:\open3d_install\include\open3d\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLIBCXX_USE_CXX11_ABI=0;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLIBCXX_USE_CXX11_ABI=0;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\open3d_install\include;C:\open3d_install\include\open3d\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\open3d_install\include;C:\open3d_install\include\open3d\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\open3d_install\lib\Open3D.lib;C:\open3d_install\lib\Open3D_3rdparty_assimp_assimp-vc142-mt.lib;C:\open3d_install\lib\Open3D_3rdparty_assimp_IrrXML.lib;C:\open3d_install\lib\Open3D_3rdparty_jpeg.lib;C:\open3d_install\lib\Open3D_3rdparty_jsoncpp.lib;C:\open3d_install\lib\Open3D_3rdparty_liblzf.lib;C:\open3d_install\lib\Open3D_3rdparty_png.lib;C:\open3d_install\lib\Open3D_3rdparty_zlib.lib;C:\open3d_install\lib\Open3D_3rdparty_rply.lib;C:\open3d_install\lib\Open3D_3rdparty_tinyfiledialogs.lib;C:\open3d_install\lib\Open3D_3rdparty_qhullcpp.lib;C:\open3d_install\lib\Open3D_3rdparty_qhull_r.lib;opengl32.lib;C:\open3d_install\lib\Open3D_3rdparty_imgui.lib;C:\open3d_install\lib\Open3D_3rdparty_zeromq.lib;ws2_32.lib;rpcrt4.lib;iphlpapi.lib;C:\open3d_install\lib\Open3D_3rdparty_tbb_tbb_static.lib;C:\open3d_install\lib\Open3D_3rdparty_tbb_tbbmalloc_static.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_intel_ilp64.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_core.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_sequential.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_tbb_thread.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_tbb_static.lib;C:\open3d_install\lib\Open3D_3rdparty_ippicv_ippiw.lib;C:\open3d_install\lib\Open3D_3rdparty_ippicv_ippicvmt.lib;C:\open3d_install\lib\Open3D_3rdparty_webrtc_webrtc.lib;C:\open3d_install\lib\Open3D_3rdparty_webrtc_webrtc_extra.lib;secur32.lib;winmm.lib;dmoguids.lib;wmcodecdspuuid.lib;msdmo.lib;strmiids.lib;C:\open3d_install\lib\Open3D_3rdparty_civetweb_civetweb.lib;C:\open3d_install\lib\Open3D_3rdparty_civetweb_civetweb-cpp.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_embree3.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_embree_avx.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_embree_avx2.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_simd.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_lexers.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_sys.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_math.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_tasking.lib;C:\open3d_install\lib\Open3D_3rdparty_glew.lib;C:\open3d_install\lib\Open3D_3rdparty_glfw.lib;gdi32.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filameshio.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filament.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filamat_lite.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filaflat.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filabridge.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_geometry.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_backend.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_bluegl.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_bluevk.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_ibl.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_image.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_meshoptimizer.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_smol-v.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_utils.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/Release/mainProcess.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/Release/mainProcess.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\open3d_install\include;C:\open3d_install\include\open3d\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLIBCXX_USE_CXX11_ABI=0;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=1;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLIBCXX_USE_CXX11_ABI=0;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=1;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\open3d_install\include;C:\open3d_install\include\open3d\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\open3d_install\include;C:\open3d_install\include\open3d\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\open3d_install\lib\Open3D.lib;C:\open3d_install\lib\Open3D_3rdparty_assimp_assimp-vc142-mt.lib;C:\open3d_install\lib\Open3D_3rdparty_assimp_IrrXML.lib;C:\open3d_install\lib\Open3D_3rdparty_jpeg.lib;C:\open3d_install\lib\Open3D_3rdparty_jsoncpp.lib;C:\open3d_install\lib\Open3D_3rdparty_liblzf.lib;C:\open3d_install\lib\Open3D_3rdparty_png.lib;C:\open3d_install\lib\Open3D_3rdparty_zlib.lib;C:\open3d_install\lib\Open3D_3rdparty_rply.lib;C:\open3d_install\lib\Open3D_3rdparty_tinyfiledialogs.lib;C:\open3d_install\lib\Open3D_3rdparty_qhullcpp.lib;C:\open3d_install\lib\Open3D_3rdparty_qhull_r.lib;opengl32.lib;C:\open3d_install\lib\Open3D_3rdparty_imgui.lib;C:\open3d_install\lib\Open3D_3rdparty_zeromq.lib;ws2_32.lib;rpcrt4.lib;iphlpapi.lib;C:\open3d_install\lib\Open3D_3rdparty_tbb_tbb_static.lib;C:\open3d_install\lib\Open3D_3rdparty_tbb_tbbmalloc_static.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_intel_ilp64.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_core.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_sequential.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_tbb_thread.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_tbb_static.lib;C:\open3d_install\lib\Open3D_3rdparty_ippicv_ippiw.lib;C:\open3d_install\lib\Open3D_3rdparty_ippicv_ippicvmt.lib;C:\open3d_install\lib\Open3D_3rdparty_webrtc_webrtc.lib;C:\open3d_install\lib\Open3D_3rdparty_webrtc_webrtc_extra.lib;secur32.lib;winmm.lib;dmoguids.lib;wmcodecdspuuid.lib;msdmo.lib;strmiids.lib;C:\open3d_install\lib\Open3D_3rdparty_civetweb_civetweb.lib;C:\open3d_install\lib\Open3D_3rdparty_civetweb_civetweb-cpp.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_embree3.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_embree_avx.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_embree_avx2.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_simd.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_lexers.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_sys.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_math.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_tasking.lib;C:\open3d_install\lib\Open3D_3rdparty_glew.lib;C:\open3d_install\lib\Open3D_3rdparty_glfw.lib;gdi32.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filameshio.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filament.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filamat_lite.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filaflat.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filabridge.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_geometry.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_backend.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_bluegl.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_bluevk.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_ibl.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_image.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_meshoptimizer.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_smol-v.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_utils.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/MinSizeRel/mainProcess.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/MinSizeRel/mainProcess.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\open3d_install\include;C:\open3d_install\include\open3d\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLIBCXX_USE_CXX11_ABI=0;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_GLIBCXX_USE_CXX11_ABI=0;OPEN3D_STATIC;GLEW_STATIC;FMT_HEADER_ONLY=1;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\open3d_install\include;C:\open3d_install\include\open3d\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\open3d_install\include;C:\open3d_install\include\open3d\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\open3d_install\lib\Open3D.lib;C:\open3d_install\lib\Open3D_3rdparty_assimp_assimp-vc142-mt.lib;C:\open3d_install\lib\Open3D_3rdparty_assimp_IrrXML.lib;C:\open3d_install\lib\Open3D_3rdparty_jpeg.lib;C:\open3d_install\lib\Open3D_3rdparty_jsoncpp.lib;C:\open3d_install\lib\Open3D_3rdparty_liblzf.lib;C:\open3d_install\lib\Open3D_3rdparty_png.lib;C:\open3d_install\lib\Open3D_3rdparty_zlib.lib;C:\open3d_install\lib\Open3D_3rdparty_rply.lib;C:\open3d_install\lib\Open3D_3rdparty_tinyfiledialogs.lib;C:\open3d_install\lib\Open3D_3rdparty_qhullcpp.lib;C:\open3d_install\lib\Open3D_3rdparty_qhull_r.lib;opengl32.lib;C:\open3d_install\lib\Open3D_3rdparty_imgui.lib;C:\open3d_install\lib\Open3D_3rdparty_zeromq.lib;ws2_32.lib;rpcrt4.lib;iphlpapi.lib;C:\open3d_install\lib\Open3D_3rdparty_tbb_tbb_static.lib;C:\open3d_install\lib\Open3D_3rdparty_tbb_tbbmalloc_static.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_intel_ilp64.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_core.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_sequential.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_mkl_tbb_thread.lib;C:\open3d_install\lib\Open3D_3rdparty_blas_tbb_static.lib;C:\open3d_install\lib\Open3D_3rdparty_ippicv_ippiw.lib;C:\open3d_install\lib\Open3D_3rdparty_ippicv_ippicvmt.lib;C:\open3d_install\lib\Open3D_3rdparty_webrtc_webrtc.lib;C:\open3d_install\lib\Open3D_3rdparty_webrtc_webrtc_extra.lib;secur32.lib;winmm.lib;dmoguids.lib;wmcodecdspuuid.lib;msdmo.lib;strmiids.lib;C:\open3d_install\lib\Open3D_3rdparty_civetweb_civetweb.lib;C:\open3d_install\lib\Open3D_3rdparty_civetweb_civetweb-cpp.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_embree3.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_embree_avx.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_embree_avx2.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_simd.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_lexers.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_sys.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_math.lib;C:\open3d_install\lib\Open3D_3rdparty_embree_tasking.lib;C:\open3d_install\lib\Open3D_3rdparty_glew.lib;C:\open3d_install\lib\Open3D_3rdparty_glfw.lib;gdi32.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filameshio.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filament.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filamat_lite.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filaflat.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_filabridge.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_geometry.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_backend.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_bluegl.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_bluevk.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_ibl.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_image.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_meshoptimizer.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_smol-v.lib;C:\open3d_install\lib\Open3D_3rdparty_filament_utils.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/RelWithDebInfo/mainProcess.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/RelWithDebInfo/mainProcess.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms -BD:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build --check-stamp-file D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\open3d_install\CMake\Open3DConfig.cmake;C:\open3d_install\CMake\Open3DConfigVersion.cmake;C:\open3d_install\CMake\Open3DTargets-release.cmake;C:\open3d_install\CMake\Open3DTargets.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeCCompiler.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeCXXCompiler.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeRCCompiler.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms -BD:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build --check-stamp-file D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\open3d_install\CMake\Open3DConfig.cmake;C:\open3d_install\CMake\Open3DConfigVersion.cmake;C:\open3d_install\CMake\Open3DTargets-release.cmake;C:\open3d_install\CMake\Open3DTargets.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeCCompiler.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeCXXCompiler.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeRCCompiler.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms -BD:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build --check-stamp-file D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\open3d_install\CMake\Open3DConfig.cmake;C:\open3d_install\CMake\Open3DConfigVersion.cmake;C:\open3d_install\CMake\Open3DTargets-release.cmake;C:\open3d_install\CMake\Open3DTargets.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeCCompiler.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeCXXCompiler.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeRCCompiler.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms -BD:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build --check-stamp-file D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\open3d_install\CMake\Open3DConfig.cmake;C:\open3d_install\CMake\Open3DConfigVersion.cmake;C:\open3d_install\CMake\Open3DTargets-release.cmake;C:\open3d_install\CMake\Open3DTargets.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeCCompiler.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeCXXCompiler.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeRCCompiler.cmake;D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\3.19.1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\mainProcess.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Documentos\INNOVATE\GH\proyectox\OptimizedAlgorithms\build\ZERO_CHECK.vcxproj">
+      <Project>{16ACF6BA-6063-3969-8F11-911C6330FE28}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,10 @@
+^D:\DOCUMENTOS\INNOVATE\GH\PROYECTOX\OPTIMIZEDALGORITHMS\BUILD\CMAKEFILES\FD64381ADA3A605E6896286C67F568B4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms -BD:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/Open3DCMakeFindPackage.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

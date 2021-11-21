@@ -1,0 +1,3 @@
+D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/CMakeFiles/mainProcess.dir
+D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/CMakeFiles/ALL_BUILD.dir
+D:/Documentos/INNOVATE/GH/proyectox/OptimizedAlgorithms/build/CMakeFiles/ZERO_CHECK.dir
