@@ -4,13 +4,12 @@ import sympy as sp
 import math
 import scipy as scp
 from scipy.spatial.transform import Rotation as R
-from Signatures import Signature
-from Utilities import *
+from .Utilities import *
 
 class Transformation:
     def __init__(self,signatureA=None,signatureB=None,rigid=None,reflection=None,clustering_weigths=None):
         self.wiegth=clustering_weigths
-        self.v_toPoint=np.vectorize(pyfunc=self.toPoint,otypes=[np.float],signature='()->(n)')
+        self.v_toPoint=np.vectorize(pyfunc=self.toPoint,otypes=[float],signature='()->(n)')
         if signatureA!=None:
             self.origin_index=signatureA.point_index
             self.image_index=signatureB.point_index

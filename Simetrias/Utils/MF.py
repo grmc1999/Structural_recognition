@@ -4,11 +4,11 @@ import sympy as sp
 import math
 import scipy as scp
 from scipy import spatial
-from Utilities import *
-from Visualization_utilities import *
+from .Utilities import *
+from .Visualization_utilities import *
 import random
-from transformation import Transformation
-from Signatures import Signature
+from .transformation import Transformation
+from .Signatures import Signature
 from sklearn.cluster import MeanShift
 from sklearn.cluster import DBSCAN
 from sklearn.cluster import OPTICS
