@@ -1,0 +1,1 @@
+"""Symmetry-based recognition package."""

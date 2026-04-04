@@ -4,11 +4,11 @@ import sympy as sp
 import math
 import scipy as scp
 from scipy import spatial
-from Utilities import *
-from Visualization_utilities import *
+from .Utilities import *
+from .Visualization_utilities import *
 import random
-from transformation import Transformation
-from Signatures import Signature
+from .transformation import Transformation
+from .Signatures import Signature
 from sklearn.cluster import MeanShift
 from sklearn.cluster import DBSCAN
 from sklearn.cluster import OPTICS
@@ -144,7 +144,7 @@ def remove_discontinuities_by_curvature(pointcloud,signatures,KDT,curvature=0.5,
     bc=prune_points(signatures,"ratio",curvature)
     #signatures.tolist().sort(key=lambda x: x.point_index, reverse=False)
     nps=signatures
-    if bc!=[]:
+    if len(bc)>0:
         s=set()
         for sig in bc:
             index=sig.point_index
