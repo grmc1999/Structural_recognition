@@ -144,7 +144,7 @@ def remove_discontinuities_by_curvature(pointcloud,signatures,KDT,curvature=0.5,
     bc=prune_points(signatures,"ratio",curvature)
     #signatures.tolist().sort(key=lambda x: x.point_index, reverse=False)
     nps=signatures
-    if bc!=[]:
+    if len(bc)>0:
         s=set()
         for sig in bc:
             index=sig.point_index
