@@ -3,7 +3,7 @@ import numpy as np
 import sympy as sp
 import math
 import scipy as scp
-from Utilities import *
+from .Utilities import *
 import functools
 @vectorize
 class Signature:

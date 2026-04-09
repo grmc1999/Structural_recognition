@@ -1,68 +1,77 @@
-#!C:/Users/grmc1/Anaconda3/envs/INNOVATE/python.exe
+#!/usr/bin/env python3
+"""CLI entrypoint for symmetry-based recognition pipelines."""
 
-import sys
-import getopt
-sys.path.append("D:\\Documentos\\INNOVATE\\GH\\proyectox\\Simetrias\\Utils")
+from __future__ import annotations
 
-from Utilities import *
-from MF import *
-from Visualization_utilities import *
-from transformation import Transformation
-from Signatures import Signature
-from Pipelines import *
+import argparse
+from pathlib import Path
+from typing import Dict, Iterable
 
-def get_arg(line):
-    prSt=(np.array(line.split(','))).reshape(-1,1)
-    Arg={}
-    for pair in prSt:
-        pair=pair[0].split("=")
-        Arg[pair[0]]=pair[1]
-    return Arg
+import numpy as np
 
-def main(argv):
-    try:
-        opts,args=getopt.getopt(argv,"i:m:",["ifile=","mode="])
-    except:
-        sys.exit(2)
+from Simetrias.Utils.Pipelines import Detect_simetries
 
-    for opt,arg in opts:
-        if opt=="-i":
-            txt=arg
-        elif opt=="-m":
-            method=arg
 
-    txt=open(txt)
-    #process=txt.readlines()
-    processes=[i.split('\n')[0] for i in txt.readlines()]
-    for process in processes:
-        fargs=get_arg(process)
-        if method=="Simetries":
-            try:
-                out=Detect_simetries(path=                  fargs["path"],
-                                    visualization=          (fargs["visualization"]=="True"),
-                                    geometry_type=          fargs["geometry_type"],
-                                    voxel_down_sample=      float(fargs["voxel_down_sample"]),
-                                    NN_for_signature_build= int(fargs["NN_for_signature_build"]),
-                                    random_frac=            float(fargs["random_frac"]),
-                                    filtered_SS=            (fargs["filtered_SS"]=="True"),
-                                    Cluster_min_samples=    int(fargs["Cluster_min_samples"]),
-                                    Cluster_xi=             float(fargs["Cluster_xi"]))
-                print(out)
-            except Exception as e: print(e)
-        elif method=="Non_Linear_PCA":
-            try:
-                out=Detect_Tube_NonLinear_PCA(
-                                    path=                   fargs["path"],
-                                    visualization=          (fargs["visualization"]=="True"),
-                                    geometry_type=          fargs["geometry_type"],
-                                    voxel_down_sample=      float(fargs["voxel_down_sample"]),
-                                    NN_for_signature_build= int(fargs["NN_for_signature_build"]),
-                                    random_frac=            float(fargs["random_frac"]),
-                                    filtered_SS=            (fargs["filtered_SS"]=="True"),
-                                    bandwidth=              float(fargs["bandwidth"]),
-                                    min_bin_freq=           int(fargs["min_bin_freq"]))
-                print(out)
-            except Exception as e: print(e)
-        
-if __name__ == '__main__':
-    main(sys.argv[1:])
+def _parse_kv_line(line: str) -> Dict[str, str]:
+    pairs = [item.strip() for item in line.split(",") if item.strip()]
+    return {k.strip(): v.strip() for k, v in (pair.split("=", 1) for pair in pairs)}
+
+
+def _parse_bool(raw: str) -> bool:
+    return raw.lower() in {"1", "true", "yes", "y"}
+
+
+def _iter_processes(config_file: Path) -> Iterable[Dict[str, str]]:
+    for raw_line in config_file.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#"):
+            continue
+        yield _parse_kv_line(line)
+
+
+def _run_symmetry_process(process_args: Dict[str, str]):
+    return Detect_simetries(
+        path=process_args["path"],
+        visualization=_parse_bool(process_args.get("visualization", "True")),
+        geometry_type=process_args.get("geometry_type", "pointCloud"),
+        voxel_down_sample=float(process_args.get("voxel_down_sample", 0.02)),
+        NN_for_signature_build=int(process_args.get("NN_for_signature_build", 30)),
+        random_frac=float(process_args.get("random_frac", 0.1 / 16)),
+        filtered_SS=_parse_bool(process_args.get("filtered_SS", "False")),
+        Cluster_min_samples=int(process_args.get("Cluster_min_samples", 30)),
+        Cluster_xi=float(process_args.get("Cluster_xi", 0.001)),
+    )
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Run symmetry-based recognition jobs from a key=value config file "
+            "(one process per line)."
+        )
+    )
+    parser.add_argument(
+        "-i",
+        "--ifile",
+        required=True,
+        help="Path to configuration file with process definitions.",
+    )
+    return parser
+
+
+def main(argv=None) -> int:
+    parser = build_parser()
+    args = parser.parse_args(argv)
+
+    config_path = Path(args.ifile).expanduser().resolve()
+    for process in _iter_processes(config_path):
+        try:
+            output = _run_symmetry_process(process)
+            print(output)
+        except Exception as exc:  # pragma: no cover - preserves current CLI behavior
+            print(exc)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
