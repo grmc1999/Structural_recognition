@@ -7,8 +7,8 @@ import random
 import copy
 from mpl_toolkits.mplot3d import axes3d
 import matplotlib.pyplot as plt
-from transformation import Transformation
-from Signatures import Signature
+from .transformation import Transformation
+from .Signatures import Signature
 from sklearn.manifold import MDS
 import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plt

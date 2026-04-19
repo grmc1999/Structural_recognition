@@ -1,13 +1,10 @@
 import time
-import sys
-import getopt
-sys.path.append("D:\\Documentos\\INNOVATE\\GH\\proyectox\\Simetrias\\Utils")
 
-from Utilities import *
-from MF import *
-from Visualization_utilities import *
-from transformation import Transformation
-from Signatures import Signature
+from .Utilities import *
+from .MF import *
+from .Visualization_utilities import *
+from .transformation import Transformation
+from .Signatures import Signature
 
 
 def Geometry_load(path="D:\\Documentos\\INNOVATE\\lib\\symmetry_detection_python\\Lineas 01_10.pts",
